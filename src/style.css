@@ -1,0 +1,201 @@
+:root {
+    --ff-primary: basic-sans, sans-serif;
+    --clr-primary-400: rgb(205, 237, 211);
+    --clr-neutral-400: rgba(205, 237, 211, 50%);
+    --clr-primary-500: rgb(139, 6, 126);
+    --clr-neutral-500: rgba(169, 4, 152, 0.4);
+    --clr-text-400: rgb(230, 230, 230);
+    --clr-text2-400: rgb(239, 144, 49);
+    --main-bg-color: rgb(24, 39, 46);
+    --spacer: 1rem;
+    
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+*/
+html, body {
+    height: 100%;
+    color: var(--clr-text-400);
+    scroll-behavior: smooth;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+/*
+    8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+header {
+    background-color: rgba(22, 22, 22);
+}
+body {
+    background-color: var(--main-bg-color);
+}
+.nav ul{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: var(--f-primary);
+}
+.links li {
+    color: var(--clr-text-400);
+    list-style: none;
+    margin: auto 0;
+}
+.links a {
+    text-decoration: none;
+    color: var(--clr-text-400);
+}
+.links a:hover, a:active {
+    cursor: pointer;
+    color: var(--clr-text2-400);
+}
+.links li:nth-of-type(2) {
+    margin-left: auto;
+}
+.links li:nth-of-type(1) {
+    margin-left: 10%;
+    font-size: 2rem;
+}
+.links li:nth-of-type(6) {
+    margin-right: 3rem;
+}
+/* main section */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 4rem;
+
+}
+/******************
+ ******************
+ ****   Home   ****
+ ******************
+ *****************/
+.introduction {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0px;
+}
+.introduction__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin-top: 200px;
+    /*padding: 3rem;*/
+}
+.introduction__title {
+    color: var(--clr-primary-500);
+    font-size: 4.5rem;
+    padding-bottom: 1rem;
+}
+.introduction__title > span {
+    color: rgb(255, 255, 255, 1);
+}
+.introduction__subtitle {
+    color: var(--clr-primary-400);
+    font-size: 2rem;
+}
+.introduction__pg {
+    font-size: 1rem;
+    color: var(--clr-neutral-400);
+}
+.introduction__picture {
+    max-width: 400px;
+    border-radius: 0.5rem;
+    margin: 50px 20px 0px 100px;
+    overflow: hidden;
+}
+/******************
+ ******************
+ ** Section Line **
+ ******************
+ *****************/
+.sectionheader {
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 4rem 0px;
+}
+.sectionheader__line {
+background-color: var(--clr-neutral-400);
+width: 30%;
+height: 1px;
+}
+.sectionheader__text {
+width: auto;
+padding: 0px 1rem;
+font-size: 2rem;
+}
+
+/******************
+ ******************
+ **** About Me ****
+ ******************
+ *****************/
+.aboutme {
+display: flex;
+flex-direction: column;
+max-width: 500px;
+gap: 1rem;
+}
+
+
+/******************
+ ******************
+ ****  Footer  ****
+ ******************
+ *****************/
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    background-color: rgba(22, 22, 22);
+}
+.socials {
+    display: flex;
+}
+.socials__icons {
+    padding: 0px 1rem;
+}
+.credits {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0px 1rem 0px;
+}
